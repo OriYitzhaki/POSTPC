@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top|bottom"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/base_msg"
+        android:gravity="top|bottom"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Do You Want To Delete Me:"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/base_msg"
+        android:id="@+id/info_msg"
+        android:text="Info"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ok_long_click"
+        android:layout_below="@id/info_msg"
+        android:text="OK"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/back_long_click"
+        android:layout_below="@id/info_msg"
+        android:text="Back"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        />
+
+</RelativeLayout>
