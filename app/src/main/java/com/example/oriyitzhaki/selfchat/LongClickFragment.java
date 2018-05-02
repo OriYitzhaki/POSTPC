@@ -6,7 +6,7 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
+import android.widget.TextView;
 
 public class LongClickFragment extends DialogFragment implements View.OnClickListener {
 
@@ -51,7 +51,7 @@ public class LongClickFragment extends DialogFragment implements View.OnClickLis
     }
 
 
-    EditText editTextInfo;
+    TextView textViewInfo;
 
     @Nullable
     @Override
@@ -59,8 +59,8 @@ public class LongClickFragment extends DialogFragment implements View.OnClickLis
         View view = inflater.inflate(R.layout.long_click_layout,container,false);
         view.findViewById(R.id.ok_long_click).setOnClickListener(this);
         view.findViewById(R.id.back_long_click).setOnClickListener(this);
-        editTextInfo = view.findViewById(R.id.info_msg);
-        editTextInfo.setText(this.resolveMessage(message));
+        textViewInfo = view.findViewById(R.id.info_msg);
+        textViewInfo.setText(this.resolveMessage(message));
         return view;
     }
 
